@@ -1,0 +1,76 @@
+<!-- <p>display-resume works!</p> -->
+
+    <!-- ############## Download Resume ############ -->
+    <div id="resume-wrapper">
+        <div id="resume-head">
+            <div id="title">
+                <h1 id="name">{{formData.firstName}} {{formData.lastName}}</h1>
+            </div>
+            <div id="primary-info">
+                <div class="info"><i class="fa fa-map-marker"></i>{{formData.address}}</div>
+                <div class="info"><i class="fa fa-envelope-o"></i>{{formData.email}}</div>
+                <div class="info"><i class="fa fa-phone"></i>{{formData.mobile}}</div>
+            </div>
+        </div>
+        <hr class="divider">
+        <div id="resume-body">
+            <div id="objective" class="resume-section">
+                <h2 class="section-title">
+                  Career Objective
+                </h2>
+                <p id="description">
+                  {{formData.objective}}
+                </p>
+            </div>
+            <div id="education" class="resume-section">
+                <h2 class="section-title">
+                    Educational Qualifications
+                </h2>
+                <div class="edinfo">
+                    <div class="main">
+                        <span id="course" class="dark">Course Name {{formData.course}}</span> in 
+                        <span class="dark" id="discipline">Discipline {{formData.discipline}}</span> from 
+                        <span class="dark" id="univ">University {{formData.univ}}</span>
+                    </div>
+                    <div class="facts">
+                        <li class="data">Grade / Percentage : <span class="dark" id="grade">
+                          {{formData.grade}}</span> </li>
+                        <li class="data">Passing Year : <span class="dark" id="year"> 
+                          {{formData.year}}</span></li>
+                    </div>
+                </div>
+                <div class="edinfo">
+                    <div class="main">
+                        <span id="course2" class="dark">Course Name {{formData.course}}</span> in 
+                        <span class="dark" id="discipline2">Discipline {{formData.discipline}}</span> from 
+                        <span class="dark" id="univ2">University {{formData.univ}}</span>
+                    </div>
+                    <div class="facts">
+                        <li class="data">Grade / Percentage : <span class="dark" id="grade2">{{formData.grade}}</span> </li>
+                        <li class="data">Passing Year : <span class="dark" id="year2">
+                          {{formData.year}}</span></li>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="achievements" class="resume-section">
+                <h2 class="section-title">
+                    Achievements
+                </h2>
+                <ul>
+                    <li>Achievement #1</li>
+                    <li>Achievement #2</li>
+                </ul>
+            </div> -->
+            <div id="skills" class="resume-section">
+                <h2 class="section-title">
+                    Skills
+                </h2>
+                <ul>
+                    <li class="skill skill1">{{formData.Skill1}}</li>
+                    <li class="skill skill2">{{formData.Skill2}}</li>
+                    <li class="skill skill3">{{formData.Skill3}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- <button onclick="window.print();">Download Resume <i class="fa fa-download"></i></button> -->
